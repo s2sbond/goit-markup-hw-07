@@ -1,0 +1,224 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity var(--transit-time) var(--transit-time-func),
+    visibility var(--transit-time) var(--transit-time-func);
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: var(--external-color);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: transform var(--transit-time) var(--transit-time-func);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, 50%) scale(0.1);
+
+  top: 0;
+}
+
+.btn-modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--external-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.icon-modal-close {
+  fill: black;
+  transition: fill var(--transit-time) var(--transit-time-func);
+}
+
+.btn-modal-close:hover .icon-modal-close,
+.btn-modal-close:focus .icon-modal-close {
+  fill: var(--accent-color);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-form-label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal-form-text {
+  display: inline-flex;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.modal-form-label input,
+.modal-form-label textarea {
+  width: 100%;
+
+  border-color: rgba(33, 33, 33, 0.2);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transition: border-color var(--transit-time) var(--transit-time-func);
+}
+
+.modal-form-input {
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 10px;
+}
+
+.modal-form-textarea {
+  display: block;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.modal-form-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-input:focus-within,
+.modal-form-textarea:focus-within {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-form-input:not(:placeholder-shown),
+.modal-form-textarea:not(:placeholder-shown) {
+  border-color: var(--accent-color);
+  color: var(--title-color);
+}
+
+.modal-input-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: var(--title-color);
+  transition: fill var(--transit-time) var(--transit-time-func);
+}
+
+.textarea {
+  margin-bottom: 20px;
+}
+
+.modal-form-input:focus-within + .modal-input-icon,
+.modal-form-input:not(:placeholder-shown) + .modal-input-icon {
+  fill: var(--accent-color);
+}
+
+.policy-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.policy-checkbox-frame {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.policy-checkbox-icon {
+  fill: transparent;
+  transition: fill var(--transit-time) var(--transit-time-func);
+}
+
+/* .policy-checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
+.policy-checkbox-input:checked + .policy-checkbox-frame {
+  border: none;
+  background-color: var(--accent-color);
+}
+
+.policy-checkbox-input:checked + .policy-checkbox-frame .policy-checkbox-icon {
+  border: none;
+  fill: var(--external-color);
+}
+
+.form-checkbox-link {
+  margin-left: 4px;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.btn-modal-form {
+  padding: 10px 55px 10px 56px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--external-color);
+  background-color: var(--accent-color);
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--transit-time) var(--transit-time-func);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-modal-form:hover,
+.btn-modal-form:focus {
+  background: #188ce8;
+}
