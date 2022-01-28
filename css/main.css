@@ -358,12 +358,26 @@ body {
   color: var(--accent-color);
 }
 
-.logo-black {
+.logo--black {
   color: #000000;
 }
 
-.logo-white {
+.logo--white {
   color: #ffffff;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--external-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .header {
@@ -491,7 +505,7 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -504,26 +518,14 @@ body {
   color: var(--external-color);
 }
 
-.hero-btn {
+.hero__btn {
   display: inline-block;
   padding: 10px 32px;
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--external-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
   -webkit-transition: background-color var(--transit-time) var(--transit-time-func);
   transition: background-color var(--transit-time) var(--transit-time-func);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
 }
 

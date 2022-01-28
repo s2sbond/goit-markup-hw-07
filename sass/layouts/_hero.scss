@@ -13,7 +13,7 @@
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -27,25 +27,13 @@
   color: var(--external-color);
 }
 
-.hero-btn {
+.hero__btn {
   display: inline-block;
   padding: 10px 32px;
-
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--external-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-
   transition: background-color var(--transit-time) var(--transit-time-func);
-}
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
