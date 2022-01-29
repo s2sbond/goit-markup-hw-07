@@ -2,7 +2,7 @@
   padding-top: 0;
 }
 
-.product-title {
+.product__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -10,22 +10,19 @@
   margin-bottom: 50px;
 }
 
-.product-list {
+.product__list {
   display: flex;
 }
 
-.product-list-item + .product-list-item {
+.product__item + .product__item {
   margin-left: 30px;
 }
 
-.product-thumb {
+.product__thumb {
   position: relative;
 }
 
-/* .product-list-img{
-} */
-
-.product-img-txt {
+.product__txt {
   display: flex;
   align-items: center;
   justify-content: center;
