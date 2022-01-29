@@ -537,11 +537,15 @@ body {
   display: flex;
 }
 
-.feature-list-item {
+.feature-list__item {
   width: 270px;
 }
 
-.feature-box-icon {
+.feature-list__item + .feature-list__item {
+  margin-left: 30px;
+}
+
+.icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,11 +561,7 @@ body {
   margin-bottom: 30px;
 }
 
-.feature-list-item + .feature-list-item {
-  margin-left: 30px;
-}
-
-.feature-list-title {
+.feature-list__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -569,7 +569,7 @@ body {
   margin-bottom: 10px;
 }
 
-.feature-list-text {
+.feature-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
