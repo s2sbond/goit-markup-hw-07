@@ -67,7 +67,7 @@
 
 .modal__title {
   margin-bottom: 12px;
-  font-size: 20px;
+  @include fontstyles(20px);
   text-align: center;
   color: var(--title-color);
 }
@@ -88,9 +88,7 @@
 .modal-form__text {
   display: inline-flex;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include fontstyles(12px, 1.17, 0.01em);
   color: var(--main-text-color);
 }
 
@@ -128,9 +126,7 @@
   resize: none;
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include fontstyes(12px, 1.17, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
 
@@ -168,9 +164,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fontstyles(14px, 1.71, 0.03em);
   color: var(--main-text-color);
 }
 

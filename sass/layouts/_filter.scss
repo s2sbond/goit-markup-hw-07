@@ -10,10 +10,7 @@
 
 .filter__btn {
   display: inline-block;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include fontstyles(16px, 1.62, 0.03em, 500);
   background-color: var(--ex-bg-color);
   color: var(--title-color);
   cursor: pointer;

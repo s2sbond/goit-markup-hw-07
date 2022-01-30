@@ -26,11 +26,7 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fontstyles(14px, 1.14, 0.02em, 500);
   color: var(--title-color);
 
   transition: color var(--transit-time) var(--transit-time-func);
@@ -55,11 +51,7 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fontstyles(14px, 1.14, 0.02em, 500);
   color: var(--main-text-color);
 
   transition: color var(--transit-time) var(--transit-time-func);

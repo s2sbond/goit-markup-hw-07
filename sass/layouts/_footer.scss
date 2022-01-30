@@ -23,9 +23,7 @@
 
 .addr__link {
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fontstyles(14px, 1.71, 0.03em);
   color: rgba(255, 255, 255, 0.6);
 
   &--map {
@@ -44,10 +42,7 @@
 }
 
 .footer__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fontstyles(14px, 1.14, 0.03em, 700);
   text-transform: uppercase;
   color: var(--external-color);
 
@@ -71,9 +66,7 @@
   width: 358px;
   height: 50px;
   padding: 15px 16px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  @include fontstyles(16px, 1.25, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -83,9 +76,7 @@
   transition: border-color var(--transit-time) var(--transit-time-func);
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include fontstyles(16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
 
