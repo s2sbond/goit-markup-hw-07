@@ -1,14 +1,14 @@
-.product {
+.section--paddingtop0 {
   padding-top: 0;
 }
 
-.product__title {
-  @include fontstyles(36px, 1.17, 0.03em);
+.section__title {
+  @include fontstyles(36px, 1.17, 0.03em, null);
   text-align: center;
   margin-bottom: 50px;
 }
 
-.product__list {
+.product {
   display: flex;
 }
 

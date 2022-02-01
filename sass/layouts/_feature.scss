@@ -13,7 +13,7 @@
   }
 }
 
-.icon-box {
+.feature-list__icon-box {
   display: flex;
   height: 120px;
   align-items: center;
@@ -24,11 +24,11 @@
 }
 
 .feature-list__title {
-  @include fontstyles(14px, 1.14, 0.03em);
+  @include fontstyles(14px, 1.14, 0.03em, null);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .feature-list__text {
-  @include fontstyles(14px, 1.71, 0.03em);
+  @include fontstyles(14px, 1.71, 0.03em, null);
 }

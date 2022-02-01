@@ -56,7 +56,12 @@ body {
   background-color: var(--external-color);
 }
 
-.title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--title-color);
 }
 
@@ -273,7 +278,7 @@ body {
   fill: var(--accent-color);
 }
 
-.textarea {
+.modal-form_label--other-margin {
   margin-bottom: 20px;
 }
 
@@ -324,7 +329,7 @@ body {
   fill: var(--external-color);
 }
 
-.form-checkbox__link {
+.policy-checkbox__link {
   margin-left: 4px;
   color: var(--accent-color);
   text-decoration: underline;
@@ -343,26 +348,26 @@ body {
 .logo {
   display: block;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  font-weight: 700;
   color: var(--accent-color);
 }
 
-.logo--black {
+.logo__black {
   color: #000000;
 }
 
-.logo--white {
+.logo__white {
   color: #ffffff;
 }
 
 .btn {
   font-size: 16px;
   line-height: 1.87;
-  font-weight: 700;
   letter-spacing: 0.06em;
+  font-weight: 700;
   background-color: var(--accent-color);
   color: var(--external-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -412,14 +417,14 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.social-list__footer-link {
+.social-list__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--external-color);
   -webkit-transition: background-color var(--transit-time) var(--transit-time-func);
   transition: background-color var(--transit-time) var(--transit-time-func);
 }
 
-.social-list__footer-link:hover, .social-list__footer-link:focus {
+.social-list__link--footer:hover, .social-list__link--footer:focus {
   background-color: var(--accent-color);
 }
 
@@ -463,10 +468,10 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: var(--title-color);
   -webkit-transition: color var(--transit-time) var(--transit-time-func);
   transition: color var(--transit-time) var(--transit-time-func);
@@ -499,10 +504,10 @@ body {
           align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
   color: var(--main-text-color);
   -webkit-transition: color var(--transit-time) var(--transit-time-func);
   transition: color var(--transit-time) var(--transit-time-func);
@@ -517,12 +522,12 @@ body {
   fill: currentColor;
 }
 
-.current {
+.navigate__link--current {
   color: var(--accent-color);
   position: relative;
 }
 
-.current::after {
+.navigate__link--current::after {
   content: '';
   width: 100%;
   height: 4px;
@@ -553,6 +558,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -588,7 +596,7 @@ body {
   margin-left: 30px;
 }
 
-.icon-box {
+.feature-list__icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,19 +626,19 @@ body {
   letter-spacing: 0.03em;
 }
 
-.product {
+.section--paddingtop0 {
   padding-top: 0;
 }
 
-.product__title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 
-.product__list {
+.product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,28 +667,28 @@ body {
   height: 70px;
   bottom: 0;
   left: 0;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--external-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team {
+.section--other-bg {
   background-color: var(--ex-bg-color);
 }
 
-.team__title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 
-.team__list {
+.team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,27 +706,27 @@ body {
   margin-left: 30px;
 }
 
-.team-cont {
+.team__container {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-cont__title {
-  font-weight: 500;
+.team__title {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
-.team-cont__text {
+.team__text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 
-.client__title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -726,7 +734,7 @@ body {
   margin-bottom: 50px;
 }
 
-.client__list {
+.client {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,7 +781,7 @@ body {
   background-color: var(--bg-color);
 }
 
-.footerflex {
+.container--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,7 +812,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.addr__link--map {
+.addr__link--other-color {
   color: #ffffff;
   -webkit-transition: color var(--transit-time) var(--transit-time-func);
   transition: color var(--transit-time) var(--transit-time-func);
@@ -819,10 +827,10 @@ body {
 }
 
 .footer__title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--external-color);
   margin-bottom: 20px;
@@ -940,10 +948,10 @@ body {
 
 .filter__btn {
   display: inline-block;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  font-weight: 500;
   background-color: var(--ex-bg-color);
   color: var(--title-color);
   cursor: pointer;
@@ -964,7 +972,7 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.active {
+.filter__btn--active {
   background-color: var(--accent-color);
   color: var(--external-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

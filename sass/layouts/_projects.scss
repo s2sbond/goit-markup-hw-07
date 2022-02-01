@@ -46,7 +46,7 @@
   top: 0;
   left: 0;
   padding: 63px 24px;
-  @include fontstyles(18px, 1.56, 0.03em);
+  @include fontstyles(18px, 1.56, 0.03em, null);
   color: var(--external-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
@@ -69,10 +69,10 @@
 }
 
 .project-list__title {
-  @include fontstyles(18px, 2, 0.06em);
+  @include fontstyles(18px, 2, 0.06em, null);
   margin-bottom: 4px;
 }
 
 .project-list__text {
-  @include fontstyes(16px, 1.87, 0.03em);
+  @include fontstyles(16px, 1.87, 0.03em, null);
 }

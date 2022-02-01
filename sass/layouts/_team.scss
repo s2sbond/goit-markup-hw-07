@@ -1,14 +1,14 @@
-.team {
+.section--other-bg {
   background-color: var(--ex-bg-color);
 }
 
-.team__title {
-  @include fontstyles(36px, 1.17, 0.03em);
+.section__title {
+  @include fontstyles(36px, 1.17, 0.03em, null);
   text-align: center;
   margin-bottom: 50px;
 }
 
-.team__list {
+.team {
   display: flex;
 }
 
@@ -24,16 +24,16 @@
   }
 }
 
-.team-cont {
+.team__container {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-cont__title {
+.team__title {
   @include fontstyles(16px, 1.19, 0.03em, 500);
   margin-bottom: 10px;
 }
-.team-cont__text {
-  @include fontstyles(16px, 1.19, 0.03em);
+.team__text {
+  @include fontstyles(16px, 1.19, 0.03em, null);
   margin-bottom: 16px;
 }
